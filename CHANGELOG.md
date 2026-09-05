@@ -1,5 +1,52 @@
 # Changelog
 
+## [1.33.0](https://github.com/career-ops-hq/career-ops/compare/career-ops-v1.32.0...career-ops-v1.33.0) (2026-09-05)
+
+
+### Features
+
+* **cv:** render an education entry's location on the HTML CV ([#3776](https://github.com/career-ops-hq/career-ops/issues/3776)) ([8e5c65d](https://github.com/career-ops-hq/career-ops/commit/8e5c65dfaedfe5d10d31926a72d79c0d9fef4a10)), closes [#3773](https://github.com/career-ops-hq/career-ops/issues/3773)
+* **oferta/pdf:** enforce JD archival in every report ([4726e05](https://github.com/career-ops-hq/career-ops/commit/4726e05312e40a1a9e2d61b2e4ccf6851fbd5a4e))
+* **scan:** per-company title_filter_overrides for scan-ats-full.mjs ([#3710](https://github.com/career-ops-hq/career-ops/issues/3710)) ([5fb18d7](https://github.com/career-ops-hq/career-ops/commit/5fb18d7cd2c2f3aa6d5c836eb1416be1d0d3cf5a)), closes [#3708](https://github.com/career-ops-hq/career-ops/issues/3708)
+* **web:** opt-in origin allowlist for the local dashboard API ([#3597](https://github.com/career-ops-hq/career-ops/issues/3597)) ([0754973](https://github.com/career-ops-hq/career-ops/commit/075497329a55d7c1e5184cfffb21fd0efeaf13ba))
+* **wttj:** server-side Algolia filters so a scan can be exhaustive ([#3757](https://github.com/career-ops-hq/career-ops/issues/3757)) ([c1df875](https://github.com/career-ops-hq/career-ops/commit/c1df875c768071369045caaf8c79f06a2fbf3059))
+
+
+### Bug Fixes
+
+* **analysis:** funnel-velocity, calibrate and weekly-digest read the configured data root ([#3715](https://github.com/career-ops-hq/career-ops/issues/3715)) ([d7ff406](https://github.com/career-ops-hq/career-ops/commit/d7ff4062269f4f1afa38c6615561288ff314f343)), closes [#3714](https://github.com/career-ops-hq/career-ops/issues/3714)
+* **analyze-patterns:** parse report headers written in French ([#3808](https://github.com/career-ops-hq/career-ops/issues/3808)) ([29f065f](https://github.com/career-ops-hq/career-ops/commit/29f065f1bed9872574c8999343b0102e698b25f4)), closes [#3807](https://github.com/career-ops-hq/career-ops/issues/3807)
+* **cli:** validate analyze-patterns flags through lib/cli-flags.mjs ([#3848](https://github.com/career-ops-hq/career-ops/issues/3848)) ([4d82beb](https://github.com/career-ops-hq/career-ops/commit/4d82beb4d3fc40baaef5a1f5d5817b9f797879a8)), closes [#2979](https://github.com/career-ops-hq/career-ops/issues/2979)
+* **cv:** render the ATS template's contact row ([#3838](https://github.com/career-ops-hq/career-ops/issues/3838)) ([e1aebed](https://github.com/career-ops-hq/career-ops/commit/e1aebed5bb6fd6d55e1cf47808bded623a0e4b48)), closes [#3775](https://github.com/career-ops-hq/career-ops/issues/3775)
+* **discover-ats:** a refused redirect is an answer, not a status to re-run ([#3804](https://github.com/career-ops-hq/career-ops/issues/3804)) ([80885c9](https://github.com/career-ops-hq/career-ops/commit/80885c9c45d288e3a86fa043db635d755afb1630))
+* **doctor:** detect project-scoped Playwright MCP plugin installs ([#3711](https://github.com/career-ops-hq/career-ops/issues/3711)) ([719d1a4](https://github.com/career-ops-hq/career-ops/commit/719d1a4c64735fec4eb6f5f4b1616db4d181476c))
+* **doctor:** keep git's "not a git repository" off stderr in --json ([#3722](https://github.com/career-ops-hq/career-ops/issues/3722)) ([8058eba](https://github.com/career-ops-hq/career-ops/commit/8058ebac18f248a36efa1dedcfac0a8ea9779b99)), closes [#3721](https://github.com/career-ops-hq/career-ops/issues/3721)
+* **doctor:** make CLI-resolution tests hermetic against a repo .env ([#2617](https://github.com/career-ops-hq/career-ops/issues/2617)) ([95225c1](https://github.com/career-ops-hq/career-ops/commit/95225c1be267116f44d5758b85e20c029602d33b))
+* **eval:** parse the score in gemini-eval instead of concatenating it ([#3799](https://github.com/career-ops-hq/career-ops/issues/3799)) ([eedc6d9](https://github.com/career-ops-hq/career-ops/commit/eedc6d921c2988cfc26fca930044f731292db2c0)), closes [#3707](https://github.com/career-ops-hq/career-ops/issues/3707)
+* four defects invisible in the maintainer's own checkout ([7f72883](https://github.com/career-ops-hq/career-ops/commit/7f72883d3965430db6aacb264a18be77c5e8358d))
+* **gitignore:** ignore the tracker and follow-ups file in the legacy root layout ([#3718](https://github.com/career-ops-hq/career-ops/issues/3718)) ([fc8ee60](https://github.com/career-ops-hq/career-ops/commit/fc8ee60419a56804924f00e7cde7f040a4effc41)), closes [#3717](https://github.com/career-ops-hq/career-ops/issues/3717)
+* **icims:** read every jobLocation entry when picking the location ([#3728](https://github.com/career-ops-hq/career-ops/issues/3728)) ([d5a5bc9](https://github.com/career-ops-hq/career-ops/commit/d5a5bc90a84e128ad095ad0775535187c73dcf05)), closes [#3727](https://github.com/career-ops-hq/career-ops/issues/3727)
+* **linkedin-join:** use the real people-search route ([#3811](https://github.com/career-ops-hq/career-ops/issues/3811)) ([b2aa0a9](https://github.com/career-ops-hq/career-ops/commit/b2aa0a976926952e874e7f5bf264ad3e3bdce072))
+* **meta:** point CITATION.cff and package.json at career-ops.org, and stop the blurb drifting across five files ([2c76ca4](https://github.com/career-ops-hq/career-ops/commit/2c76ca434555dee6bf6236573225f257bbbdca24))
+* **pdf:** recognize Chinese section titles in SECTION_ALIASES ([#3803](https://github.com/career-ops-hq/career-ops/issues/3803)) ([49b6586](https://github.com/career-ops-hq/career-ops/commit/49b6586e5212e7d5e8553e6189f8978484a05387)), closes [#3658](https://github.com/career-ops-hq/career-ops/issues/3658)
+* **providers:** radancy stops trusting totalResults, cache-busts JSON, retries every fetch ([#3839](https://github.com/career-ops-hq/career-ops/issues/3839)) ([4086d45](https://github.com/career-ops-hq/career-ops/commit/4086d4546b16b00d1de7b0b320933a83c7355835))
+* **scan:** opt-in location-aware company+role dedupe ([#3751](https://github.com/career-ops-hq/career-ops/issues/3751)) ([ae97912](https://github.com/career-ops-hq/career-ops/commit/ae979122628b3c3b1746213c29af3a91f1b7f8ce)), closes [#3750](https://github.com/career-ops-hq/career-ops/issues/3750)
+* **templates:** make the CV template's second hardcoded color themeable ([#3699](https://github.com/career-ops-hq/career-ops/issues/3699)) ([351f7f5](https://github.com/career-ops-hq/career-ops/commit/351f7f5240b8ef1e7231cee7f906a583b7073834)), closes [#3695](https://github.com/career-ops-hq/career-ops/issues/3695)
+* **tests:** pass --confirm to apply in the local-paths regression leg ([#3755](https://github.com/career-ops-hq/career-ops/issues/3755)) ([e979d4e](https://github.com/career-ops-hq/career-ops/commit/e979d4e04c35807a3905ebfb3cc87f8d621192ce))
+* **tests:** skip nested checkouts by marker, not by the name .git ([#3681](https://github.com/career-ops-hq/career-ops/issues/3681)) ([35a7cdb](https://github.com/career-ops-hq/career-ops/commit/35a7cdb22cd25fcb0ad59795606dfe660baf91c5)), closes [#3499](https://github.com/career-ops-hq/career-ops/issues/3499)
+* **token-tracker:** add MiniMax-M3 and MiniMax-M2.7 rates ([#3800](https://github.com/career-ops-hq/career-ops/issues/3800)) ([8aef9e0](https://github.com/career-ops-hq/career-ops/commit/8aef9e057472972987edca0e3b36fd23c865e283))
+* **tracker:** carry the tracker layout through the export round-trip ([#3794](https://github.com/career-ops-hq/career-ops/issues/3794)) ([4f12d84](https://github.com/career-ops-hq/career-ops/commit/4f12d845ed347766a808a1995f2a8bfdf1e6b48e)), closes [#3703](https://github.com/career-ops-hq/career-ops/issues/3703)
+* **tracker:** map "fecha" to the date column ([#3767](https://github.com/career-ops-hq/career-ops/issues/3767)) ([843d179](https://github.com/career-ops-hq/career-ops/commit/843d179624e09c5b9bc9ec372a2b21dd338ef94e)), closes [#3705](https://github.com/career-ops-hq/career-ops/issues/3705)
+* **tracker:** resolve addition columns by name so score and status cannot transpose ([00b0296](https://github.com/career-ops-hq/career-ops/commit/00b0296c6071eb955f38404e60a10ceaccad45b5))
+* **triage:** weights sum to 1.00 and a test pins prose against the formula ([#3831](https://github.com/career-ops-hq/career-ops/issues/3831)) ([6a8e876](https://github.com/career-ops-hq/career-ops/commit/6a8e8762168f1302daaa6928460dd027a7c06596)), closes [#3738](https://github.com/career-ops-hq/career-ops/issues/3738)
+* **update:** resolve preserved files before staging so :(exclude) never reaches --literal-pathspecs ([#3742](https://github.com/career-ops-hq/career-ops/issues/3742)) ([bbfae51](https://github.com/career-ops-hq/career-ops/commit/bbfae511a84964177022bcf44cf7d93aa385390e)), closes [#3740](https://github.com/career-ops-hq/career-ops/issues/3740)
+* **verify-cv-facts:** a proposed plan horizon is not a metric claim ([#3656](https://github.com/career-ops-hq/career-ops/issues/3656)) ([ad2e6e8](https://github.com/career-ops-hq/career-ops/commit/ad2e6e8cc41329855645bc5f2a07f6f3af0d49e3))
+* **verify-cv-facts:** stop flagging ordinary prose as tool claims ([#3643](https://github.com/career-ops-hq/career-ops/issues/3643)) ([6043ef8](https://github.com/career-ops-hq/career-ops/commit/6043ef811f2c3449ddfe1e658419526fe7aaeda2)), closes [#3639](https://github.com/career-ops-hq/career-ops/issues/3639)
+* **web:** don't let a failed fetch become a scored report ([#3826](https://github.com/career-ops-hq/career-ops/issues/3826)) ([10ede60](https://github.com/career-ops-hq/career-ops/commit/10ede60522f1abd71dfd8c93266f9176180213ac))
+* **web:** give grok a parser, and make the token fold per-CLI ([#2689](https://github.com/career-ops-hq/career-ops/issues/2689)) ([c7549fb](https://github.com/career-ops-hq/career-ops/commit/c7549fb3593f9ee456d7118beb80b0ee6e76747c))
+* **web:** identify the verdict block by its heading, not by the letter ([#3502](https://github.com/career-ops-hq/career-ops/issues/3502)) ([0ef1bfb](https://github.com/career-ops-hq/career-ops/commit/0ef1bfbe2385551af415e05858900710d0aadd23))
+* **web:** parseCliJson misses set-status.mjs's pretty-printed success ([#3602](https://github.com/career-ops-hq/career-ops/issues/3602)) ([848ca44](https://github.com/career-ops-hq/career-ops/commit/848ca440fb2d243ae08205ab3d0bc12903a36c65))
+
 ## [1.32.0](https://github.com/career-ops-hq/career-ops/compare/career-ops-v1.31.0...career-ops-v1.32.0) (2026-09-03)
 
 
