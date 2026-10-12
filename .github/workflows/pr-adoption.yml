@@ -16,8 +16,6 @@ name: 'PR adoption ladder'
 # CONTRIBUTING.md -> "Adopting an abandoned PR".
 
 on:
-  schedule:
-    - cron: '47 5 * * *'
   workflow_dispatch:
 
 permissions:

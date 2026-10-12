@@ -1,7 +1,5 @@
 name: 'Close stale issues and PRs'
 on:
-  schedule:
-    - cron: '0 6 * * 1' # Every Monday at 6am UTC
   workflow_dispatch:
 
 permissions:

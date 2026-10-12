@@ -1,11 +1,10 @@
 name: 'CodeQL Analysis'
 on:
+  workflow_dispatch:
   push:
     branches: [main]
   pull_request:
     branches: [main]
-  schedule:
-    - cron: '0 4 * * 1' # Weekly Monday 4am UTC
 
 permissions:
   actions: read
